@@ -1,0 +1,36 @@
+.wrapper {
+    top: 40px;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    z-index: 100;
+    border-radius: 4px;
+    max-height: 0;
+    padding: 4px 4px;
+    overflow-x: hidden;
+    transition: all 0.3s;
+}
+
+.open {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.wrapper h4 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* width */
+.wrapper::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 4px;
+}
+  
+
+/* Handle */
+.wrapper::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #888;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+    width: 95%;
+}
+
+.search {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.icon {
+    color: rgba(0, 0, 0, 0.3);
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.search-input {
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search:hover {
+    border-color: var(--text);
+}

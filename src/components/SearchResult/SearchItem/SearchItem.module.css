@@ -1,0 +1,12 @@
+.wrapper {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.wrapper span {
+    display: block;
+}
+
+.wrapper:hover {
+    background-color: #f5f5f5;
+}

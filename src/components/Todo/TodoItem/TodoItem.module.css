@@ -1,0 +1,75 @@
+.wrapper {
+    padding: 8px 14px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 30px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: width 0.4s linear;
+    width: 90px;
+    height: 30px;
+    background-color: white;
+}
+
+.btn span {
+    cursor: pointer;
+    top: 4px;
+    position: absolute;
+    right: 8px;
+}
+
+.btn:hover {
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.spinner {
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 0;
+    display: none;
+    margin-right: 4px;
+    transition: all 0.5s linear;
+    animation: var(--animation) 2s linear infinite;
+    color: var(--text);
+}
+
+.show {
+    width: 110px;
+    border-color: #4096ff;
+    color: #4096ff;
+}
+
+.show1 {
+    display: block;
+    width: auto;
+}
+
+.finish {
+    color: green;
+}
+
+.not-finish {
+    color: rgb(210, 23, 23);
+}
+
+@keyframes load {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

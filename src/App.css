@@ -1,0 +1,23 @@
+:root {
+  --animation: load;
+  --text: #4096ff;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+
+
+
+@keyframes load {
+  from {
+      transform: rotate(0);
+  } to {
+      transform: rotate(360deg);
+  }
+}
